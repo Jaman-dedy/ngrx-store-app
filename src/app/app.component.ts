@@ -13,6 +13,10 @@ import { SideBarSignal } from './shared/signals/sidebar.signal';
 import { ScreenSizeDirective } from './shared/directives/screen-size.directive';
 import { ScreenSizeSignal } from './shared/signals/screen-size.signal';
 import { CounterComponent } from './counter/counter.component';
+import { Store } from '@ngrx/store';
+import { Observable } from 'rxjs';
+import { AppState } from './states/app.state';
+import { selectCount } from './states/counter/counter.selector';
 
 @Component({
   selector: 'app-root',
